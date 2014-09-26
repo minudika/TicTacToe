@@ -984,12 +984,14 @@ containing a value of this type.
         public static final int bg=0x7f020057;
         public static final int bg2=0x7f020058;
         public static final int bg3=0x7f020059;
-        public static final int border=0x7f02005a;
-        public static final int btnplaynow=0x7f02005b;
-        public static final int gradient=0x7f02005c;
-        public static final int ic_launcher=0x7f02005d;
-        public static final int o=0x7f02005e;
-        public static final int x=0x7f02005f;
+        public static final int bg4=0x7f02005a;
+        public static final int bg5=0x7f02005b;
+        public static final int border=0x7f02005c;
+        public static final int btnplaynow=0x7f02005d;
+        public static final int gradient=0x7f02005e;
+        public static final int ic_launcher=0x7f02005f;
+        public static final int o=0x7f020060;
+        public static final int x=0x7f020061;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1003,7 +1005,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05004b;
+        public static final int action_settings=0x7f050050;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1015,6 +1017,8 @@ containing a value of this type.
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
+        public static final int editText1=0x7f05004c;
+        public static final int editText2=0x7f05004d;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
@@ -1063,6 +1067,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
+        public static final int textView1=0x7f05004e;
+        public static final int textView2=0x7f05004f;
+        public static final int timer=0x7f05004b;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1118,15 +1125,21 @@ containing a value of this type.
         public static final int abc_popup_menu_item_layout=0x7f030014;
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
-        public static final int activity_main=0x7f030017;
-        public static final int activity_player_select=0x7f030018;
-        public static final int fragment_main=0x7f030019;
-        public static final int fragment_player_select=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_get_player_detail=0x7f030017;
+        public static final int activity_main=0x7f030018;
+        public static final int activity_player_select=0x7f030019;
+        public static final int activity_single_play=0x7f03001a;
+        public static final int fragment_get_player_detail=0x7f03001b;
+        public static final int fragment_main=0x7f03001c;
+        public static final int fragment_player_select=0x7f03001d;
+        public static final int fragment_single_play=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
-        public static final int player_select=0x7f0c0001;
+        public static final int get_player_detail=0x7f0c0000;
+        public static final int main=0x7f0c0001;
+        public static final int player_select=0x7f0c0002;
+        public static final int single_play=0x7f0c0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1172,7 +1185,9 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
         public static final int hello_world=0x7f0a000e;
+        public static final int title_activity_get_player_detail=0x7f0a0012;
         public static final int title_activity_player_select=0x7f0a0010;
+        public static final int title_activity_single_play=0x7f0a0011;
     }
     public static final class style {
         /** 
