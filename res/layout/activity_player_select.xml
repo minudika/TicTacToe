@@ -1,62 +1,62 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.tictactoe.PlayerSelect"
-    tools:ignore="MergeRootFrame" >
+    tools:ignore="MergeRootFrame" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg3" >
 
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButton2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:background="#ff000000"
-            android:textColor="#ff00ff00"
-            android:text="Multiplayer (Seperate Devices)" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/radioButton3"
-            android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/radioButton3"
-            android:layout_marginTop="171dp"
-            android:background="#ff000000"
-            android:text="Multiplayer (Single Device)"
-            android:textColor="#ff00ff00" />
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/radioButton2"
-            android:layout_alignLeft="@+id/radioButton2"
-            android:layout_alignRight="@+id/radioButton3"
-            android:layout_marginBottom="62dp"
-            android:background="#ff000000"
-            android:text="Single Player"
-            android:textColor="#ff00ff00" />
-
         <ImageButton
-            android:id="@+id/imageButton1"
+            android:id="@+id/btnPlaynow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButton3"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="58dp"
+            android:layout_marginBottom="92dp"
             android:background="@android:color/transparent"
             android:src="@drawable/btnplaynow" />
+
+        <RadioGroup
+            android:id="@+id/radioGrp_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnPlaynow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="61dp"
+            android:background="#80000000"
+            android:paddingBottom="10dp" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Single Player"
+                android:textColor="#ff00ff00"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiplayer (on single device)"
+                android:textColor="#ff00ff00"
+                android:textStyle="bold|italic" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiplayer (on seperate devices)"
+                android:textColor="#ff00ff00"
+                android:textStyle="bold|italic" />
+
+        </RadioGroup>
 
     </RelativeLayout>
 
 </FrameLayout>
-
