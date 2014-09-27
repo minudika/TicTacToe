@@ -1,18 +1,20 @@
 package com.example.tictactoe;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+import android.app.Dialog;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-public class SinglePlay extends ActionBarActivity {
-
+public class SinglePlay extends ActionBarActivity { 
+	String playerName;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,6 +24,23 @@ public class SinglePlay extends ActionBarActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		
+		final Dialog playerNameDialog=new Dialog(SinglePlay.this);
+		//playerNameDialog.setTitle("Player's Name");
+		playerNameDialog.setContentView(R.layout.customdialog);
+		Button btnOK=(Button) playerNameDialog.findViewById(R.id.btnOK);
+		final EditText txtName=(EditText) playerNameDialog.findViewById(R.id.playerName);
+		playerNameDialog.show();
+		btnOK.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				playerName=txtName.getText().toString();
+				playerNameDialog.dismiss();
+			}
+		});
+		
+		Toast.makeText(getBaseContext(), playerName, Toast.LENGTH_LONG).show();
 	}
 
 	@Override

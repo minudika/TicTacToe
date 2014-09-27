@@ -44,15 +44,15 @@ public class PlayerSelect extends ActionBarActivity {
 				
 				if(radio1.isChecked()){
 					intent.putExtra("option", 1);
-					startActivity(intent);
+					startActivity(new Intent(PlayerSelect.this,SinglePlay.class));
 				}
 				else if(radio2.isChecked()){
 					intent.putExtra("option",2);
-					startActivity(intent);
+					startActivity(new Intent(PlayerSelect.this,MultiplayerSingle.class));
 				}
 				else if(radio3.isChecked()){
 					intent.putExtra("option",3);
-					startActivity(intent);
+					startActivity(new Intent(PlayerSelect.this,MultiplayerSingle.class));
 				}				
 				else{
 					Toast.makeText(getBaseContext(), "Please select an option", Toast.LENGTH_LONG).show();

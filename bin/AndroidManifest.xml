@@ -13,6 +13,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name="com.example.tictactoe.MainActivity"
             android:label="@string/app_name" >
@@ -20,23 +21,40 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
         <activity
             android:name="com.example.tictactoe.PlayerSelect"
             android:label="@string/title_activity_player_select" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
             android:name="com.example.tictactoe.SinglePlay"
             android:label="@string/title_activity_single_play" >
+             <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
         </activity>
+        
         <activity
             android:name="com.example.tictactoe.GetPlayerDetails"
             android:label="@string/title_activity_get_player_detail" >
+              <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>            
         </activity>
+        
+        <activity
+            android:name="com.example.tictactoe.MultiplayerSingle"
+            android:label="@string/title_activity_multiplayer_single" >
+               <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
     </application>
 
 </manifest>

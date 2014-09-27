@@ -7,5 +7,6 @@
     <string name="title_activity_player_select">PlayerSelect</string>
     <string name="title_activity_single_play">SinglePlay</string>
     <string name="title_activity_get_player_detail">GetPlayerDetail</string>
+    <string name="title_activity_multiplayer_single">MultiplayerSingle</string>
 
 </resources>
